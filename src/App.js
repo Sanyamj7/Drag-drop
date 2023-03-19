@@ -1,10 +1,8 @@
 import './App.css';
 import Boards from './components/Boards';
 import Card from './components/Card';
-import React, { useState } from 'react';
-import $ from "jquery";
+import React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 function handleclick() {
@@ -40,8 +38,8 @@ function App() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  var all=new Array();
-  let user1="hello";
+  // var all=new Array();
+  // let user1="hello";
   const handelModelOpenClicked = () => {
     handleOpen();
     handleclick();
